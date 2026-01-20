@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "language": "en",
+    "title": "ATS Scanner",
+    "description": "AI-powered ATS scanner that helps you to scan and improve your resume to maximize your chances of getting hired."
+  },
+  "header": {
+    "home": "Home",
+    "scan": "Scan"
+  },
+  "footer": {
+    "builtWith": "Built with Nuxt UI"
+  },
+  "landing": {
+    "hero": {
+      "title": "Scan your resume",
+      "description": "Upload your resume in PDF format to get an AI-powered analysis of its ATS compatibility and overall quality.",
+      "link": "Scan your resume"
+    },
+    "features": {
+      "sectionTitle": "Why use our ATS scanner?",
+      "sectionDescription": "Get AI-powered feedback to make your resume pass ATS filters and impress recruiters.",
+      "ai": {
+        "title": "AI-Powered Analysis",
+        "description": "Our AI evaluates your resume like a recruiter and an ATS. Get pros, cons, and a 0–100 score to see where you stand."
+      },
+      "score": {
+        "title": "ATS Compatibility Score",
+        "description": "See how well your resume will pass ATS filters. Fix issues before you apply and increase your chances of landing interviews."
+      },
+      "structured": {
+        "title": "Structured Feedback",
+        "description": "Get both quick pros and cons and a detailed breakdown by category—formatting, content, impact—so you know exactly what to improve."
+      },
+      "privacy": {
+        "title": "Privacy-Focused",
+        "description": "Your PDF is converted to text in your browser. Only that text is sent for analysis, so your full resume never travels as a file."
+      },
+      "instant": {
+        "title": "Instant, Actionable Results",
+        "description": "Get your analysis in seconds with clear, specific suggestions you can act on right away—no waiting, no guesswork."
+      },
+      "multilang": {
+        "title": "Multi-Language Support",
+        "description": "Use the app and read your feedback in your language. We support English and Spanish so you can focus on improving, not translating."
+      }
+    },
+    "cta": {
+      "header": "Join our satisfied users",
+      "title": "Ready to scan your resume?",
+      "description": "Scan your resume and improve your chances of getting hired.",
+      "link": "Scan your resume"
+    }
+  },
+  "scan": {
+    "hero": {
+      "title": "Scan your resume",
+      "description": "Upload your resume in PDF format to get an AI-powered analysis of its ATS compatibility and overall quality."
+    },
+    "form": {
+      "label": "Drop or click to upload your file here",
+      "description": "PDF file ONLY (max. 5MB)",
+      "button": "Analyze Resume"
+    },
+    "results": {
+      "title": "Analysis Results",
+      "score": "Score",
+      "pros": "Top Strengths",
+      "cons": "Key Improvements"
+    },
+    "detailed": {
+      "title": "Detailed Breakdown",
+      "categories": {
+        "pros": "Pros",
+        "cons": "Cons"
+      }
+    }
+  }
+}

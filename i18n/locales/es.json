@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "language": "es",
+    "title": "Escáner de ATS",
+    "description": "Escáner de ATS powered por IA que te ayuda a escanear y mejorar tu currículum para maximizar tus chances de ser contratado."
+  },
+  "header": {
+    "home": "Inicio",
+    "scan": "Escanear"
+  },
+  "footer": {
+    "builtWith": "Construido con Nuxt UI"
+  },
+  "landing": {
+    "hero": {
+      "title": "Escanea tu currículum",
+      "description": "Sube tu currículum en formato PDF para obtener un análisis de su compatibilidad con ATS y calidad general.",
+      "link": "Escanea tu currículum"
+    },
+    "features": {
+      "sectionTitle": "¿Por qué usar nuestro escáner ATS?",
+      "sectionDescription": "Obtén feedback con IA para que tu currículum pase los filtros ATS e impresione a los reclutadores.",
+      "ai": {
+        "title": "Análisis con IA",
+        "description": "Nuestra IA evalúa tu currículum como un reclutador y un ATS. Obtén pros, contras y una puntuación del 0 al 100 para saber cómo estás."
+      },
+      "score": {
+        "title": "Puntuación de compatibilidad ATS",
+        "description": "Comprueba qué tan bien pasará tu currículum los filtros ATS. Corrige problemas antes de postularte y aumenta tus opciones de conseguir entrevistas."
+      },
+      "structured": {
+        "title": "Feedback estructurado",
+        "description": "Recibe pros y contras rápidos y un desglose por categoría—formato, contenido, impacto—para saber exactamente qué mejorar."
+      },
+      "privacy": {
+        "title": "Orientado a la privacidad",
+        "description": "Tu PDF se convierte en texto en tu navegador. Solo ese texto se envía para el análisis; tu currículum completo no viaja como archivo."
+      },
+      "instant": {
+        "title": "Resultados rápidos y accionables",
+        "description": "Obtén tu análisis en segundos con sugerencias claras y concretas para actuar de inmediato—sin esperas ni suposiciones."
+      },
+      "multilang": {
+        "title": "Varios idiomas",
+        "description": "Usa la app y lee tu feedback en tu idioma. Soportamos inglés y español para que te centres en mejorar, no en traducir."
+      }
+    },
+    "cta": {
+      "header": "Únete a nuestros usuarios satisfechos",
+      "title": "¿Listo para escanear tu currículum?",
+      "description": "Escanea tu currículum y mejora tus chances de ser contratado.",
+      "link": "Escanea tu currículum"
+    }
+  },
+  "scan": {
+    "hero": {
+      "title": "Escanea tu currículum",
+      "description": "Sube tu currículum en formato PDF para obtener un análisis de su compatibilidad con ATS y calidad general."
+    },
+    "form": {
+      "label": "Arrastra o haz clic para subir tu archivo aquí",
+      "description": "SOLO archivo PDF (max. 5MB)",
+      "button": "Analizar currículum"
+    },
+    "results": {
+      "title": "Resultados de análisis",
+      "score": "Puntaje",
+      "pros": "Principales fortalezas",
+      "cons": "Mejoras clave"
+    },
+    "detailed": {
+      "title": "Desglose detallado",
+      "categories": {
+        "pros": "Fortalezas",
+        "cons": "Debilidades"
+      }
+    }
+  }
+}
