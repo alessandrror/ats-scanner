@@ -13,7 +13,7 @@ useHead({
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
   link: [
-    { rel: 'icon', href: '/favicon.ico' }
+    { rel: 'icon', href: '/favicon.svg' }
   ],
   htmlAttrs: {
     lang: htmlLang.value ?? 'en'
@@ -35,10 +35,11 @@ useSeoMeta({
   <UApp>
     <div
       id="dots"
-      class="fixed inset-0 m-auto size-full blur-xs bg-[radial-gradient(var(--ui-text-muted)_1px,_transparent_1px)] bg-size-[32px_32px]"
+      class="fixed inset-0 m-auto size-full blur-xs bg-[radial-gradient(var(--ui-text-muted)_1px,transparent_1px)] bg-size-[32px_32px]"
     />
     <UHeader class="fixed top-0 left-0 right-0">
       <template #left>
+        <AppLogo />
         <NavLinks />
       </template>
 
@@ -55,10 +56,17 @@ useSeoMeta({
     </UHeader>
 
     <UMain class="p-5 mt-16 relative mx-auto flex size-full flex-col sm:max-w-160 md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
+      <NuxtPwaManifest />
       <NuxtPage />
     </UMain>
 
-    <USeparator icon="i-simple-icons-nuxtdotjs" />
+    <USeparator
+      :avatar="{
+        src: '/favicon.svg',
+        alt: 'ATS Scanner Logo',
+        class: 'size-8'
+      }"
+    />
 
     <UFooter>
       <template #left>
@@ -69,7 +77,7 @@ useSeoMeta({
 
       <template #right>
         <UButton
-          to="https://github.com/alessandrro/ats-scanner"
+          to="https://github.com/alessandrror/ats-scanner"
           target="_blank"
           icon="i-simple-icons-github"
           aria-label="GitHub"
