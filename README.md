@@ -1,60 +1,56 @@
-# Nuxt Starter Template
+# ATS Scanner
 
-[![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
+ATS Scanner is a résumé review tool built to help job seekers understand how their CV aligns with a specific job opening. The intended experience compares a résumé with the role's requirements and turns the results into clear strengths, gaps, and improvement suggestions.
 
-Use this template to get started with [Nuxt UI](https://ui.nuxt.com) quickly.
+**Current status:** the repository implements an initial résumé-analysis flow. Job-description matching and OCR for scanned/image-only PDFs are planned, not yet implemented.
 
-- [Live demo](https://starter-template.nuxt.dev/)
-- [Documentation](https://ui.nuxt.com/docs/getting-started/installation/nuxt)
+- [Live application](https://ats-scanner.alessandrror.dev/)
+- [Portfolio case study](https://alessandrror.dev/en/projects/ats-scanner)
 
-<a href="https://starter-template.nuxt.dev/" target="_blank">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png">
-    <img alt="Nuxt Starter Template" src="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png">
-  </picture>
-</a>
+## Current product flow
 
-> The starter template for Vue is on https://github.com/nuxt-ui-templates/starter-vue.
+1. Upload a PDF résumé (up to 5 MB).
+2. The browser extracts selectable text from the PDF with PDF.js.
+3. The extracted text and selected language are sent to a server endpoint.
+4. Gemini returns structured feedback, including a score and résumé improvement guidance.
 
-## Quick Start
+The current flow does not send the PDF itself to the analysis endpoint. Image-only/scanned PDFs are not OCR-processed, and the analysis is not yet matched against a specific job description.
 
-```bash [Terminal]
-npm create nuxt@latest -- -t github:nuxt-ui-templates/starter
-```
+## Built with
 
-## Deploy your own
+- Nuxt and Vue
+- TypeScript
+- Nuxt UI and Tailwind CSS
+- Google Gemini
+- PDF.js for browser-side PDF text extraction
+- Zod for request and response validation
+- Nuxt i18n (English and Spanish)
+- Bun
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-name=starter&repository-url=https%3A%2F%2Fgithub.com%2Fnuxt-ui-templates%2Fstarter&demo-image=https%3A%2F%2Fui.nuxt.com%2Fassets%2Ftemplates%2Fnuxt%2Fstarter-dark.png&demo-url=https%3A%2F%2Fstarter-template.nuxt.dev%2F&demo-title=Nuxt%20Starter%20Template&demo-description=A%20minimal%20template%20to%20get%20started%20with%20Nuxt%20UI.)
-
-## Setup
-
-Make sure to install the dependencies:
+## Run locally
 
 ```bash
 bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
 bun dev
 ```
 
-## Production
+The development server is available at `http://localhost:3000`. Configure the Gemini credential in the local environment before using the analysis endpoint; never commit secrets.
 
-Build the application for production:
+To create and preview a production build:
 
 ```bash
 bun build
-```
-
-Locally preview production build:
-
-```bash
 bun preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Roadmap
+
+- [ ] Add multimodal PDF analysis/OCR for scanned or image-based résumés.
+- [ ] Let applicants provide a job description and compare their résumé with that vacancy's requirements.
+- [ ] Surface evidence-backed matches and gaps so applicants can prioritize edits before applying.
+
+These items capture the intended next product steps; they should only be marked complete once implemented and verified in the application.
+
+## Context
+
+ATS Scanner was developed independently by Alessandro Rivas, who led the product concept, architecture, API/backend, and frontend. The goal came from a practical need: identify a CV's strengths and weaknesses against a role's requirements and improve the chances of progressing in a hiring process.
